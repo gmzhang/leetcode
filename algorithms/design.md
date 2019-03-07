@@ -22,3 +22,24 @@
 
 时间复杂度：O(n)
 空间复杂度：O(n)
+
+## reverse-integer
+
+像反转字符串一样，反转数字
+
+通过 `top` 和 `push` 进行反转
+
+**通过数学操作** 实现 `top` 和 `push`
+
+```js
+
+//pop operation:
+pop = x % 10;
+x /= 10;
+
+//push operation:
+temp = rev * 10 + pop;
+rev = temp;
+```
+
+**注意溢出** 数字的最大值和最小值
